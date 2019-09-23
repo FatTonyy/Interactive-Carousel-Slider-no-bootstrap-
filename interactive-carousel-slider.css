@@ -1,69 +1,66 @@
 @import("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700");
  body {
-    display: flex;
-    flex-direction: column;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #404040;
-    background-color: #af93d1;
-    font-weight: 300;
-    letter-spacing: .2rem;
-    justify-content: space-evenly;
-    height: 97vh;
-    align-items: center;
-}
-
-.container {
-    border: 1px solid #2c2424;
-    padding: 1.8rem;
-    margin: 1%;
-    min-height: 30vh;
-    background:#fff;
-    border-top-right-radius: 40px;
-    border-bottom-left-radius: 40px;
-    width:80vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #404040;
+  background-color: #3b205d;
+  font-weight: 300;
+      letter-spacing: .2rem;
   
+}
+.container {
+    width: 80%;
+    border: 1px solid #ddd;
+    padding: 1.8rem;
+    margin: 10% 6%;
+    height: 12rem;
+    position: absolute;
+  background:#fff;
 }
 h2 {
   text-align:center;
   text-shadow: 3px 4px 7px #ddd;
 }
-#slide1, #slide2 {
+#slide1 {
+    /* margin: 10px 30px; */
+    position: absolute;
     overflow: hidden;
-  box-shadow:3px 3px 20px #555;
 }
-
-section {
-  display: flex;
-  justify-content: space-between;
-  
+#slide2 {
+  position: absolute;
+    overflow: hidden;
+  top:50%;
 }
-
 i.slider1next, i.slider2next {
     padding: 1.5rem;
     color: #000;
     cursor: pointer;
-    flex: 0 0 15px;
+    position: absolute;
+    right: 0;
 }
 i.slider1prev, i.slider2prev {
     padding: 1.5rem;
     color: #000;
     cursor: pointer;
-    flex: 0 0 15px;
+    position: absolute;
+    left: 0;
 }
-
+.boxy {
+  height: 40%;
+  width: 10%;
+  border:1px solid #404040;
+  background: #ddd;
+  float:left;
+  padding:.5rem;
+}
 .slider {
+    /* top: 0; */
+    width: 71%;
     display: none;
     margin: 0 auto;
+    position: relative
 }
 .slider:first-of-type {
   display:block;
-}
-
-@media screen and (max-width:475px) {
-  .container {
-    margin: 1% 1%;
-    min-height: 30vh;
-  }
 }
